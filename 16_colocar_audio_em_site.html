@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Mídias e audios em HTML5</title>
+
+</head>
+
+<body>
+
+
+    
+<h1>Reproduzindo Áudio</h1> 
+
+<pre>
+
+Vamos aprender a reproduzir áudios em HTML5.
+
+</pre>
+
+<audio src="/storage/emulated/0/estoque/musica_gank.mp3" controls autoplay></audio>
+    
+<pre>outra forma de adcionar audio caso o navegador nao carregue é atraves da tag source src que vai rodar outros tipos de formatos MP3, ogg, wav</pre>
+
+<audio preload="auto" autoplay controls>
+    <source src="/storage/emulated/0/estoque/musica_gank.mp3" type="audio/mpeg">
+    <source src="/storage/emulated/0/estoque/musica_gank.ogg" type="audio/ogg">
+    <source src="/storage/emulated/0/estoque/musica_gank.wav" type="audio/wav">
+</audio>
+
+<pre>
+
+Audio com loop, ou seja ao terminar reinicia sozinho</pre>
+
+<audio preload="auto" autoplay controls loop>
+    <source src="/storage/emulated/0/estoque/musica_gank.mp3" type="audio/mpeg"
+</audio>
+</body>
+</html>

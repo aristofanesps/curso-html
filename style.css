@@ -1,0 +1,14 @@
+@charset="UTF-8";
+
+    body{
+        background-color:#ffe715;
+        text-align:justify;
+    }
+    h1 {
+        background-color:#1d1a02;
+        color:#fce7e7f4;
+        font-family: Arial;   
+    }
+    p{
+        text-align: right;
+    }
