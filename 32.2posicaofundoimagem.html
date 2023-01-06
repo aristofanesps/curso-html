@@ -12,7 +12,7 @@
         width: 200px;
         height: 200px;
         border-radius: 5px;
-        border: 1px solid black;
+        border: 3px solid red;
         margin: 2px;
     }
     #d1{
@@ -32,16 +32,42 @@
         background-image: url(recife.webp);
         background-position: right center;
     }
+    #d5{
+        background-image: url(recife.webp);
+        background-position: center center;
+    }
+    body{
+        background-image: url(recife.webp);
+        background-position: center center;
+    }
+    ul{
+        background-color: aqua;
+    }
+    h2{
+        background-color: chartreuse;
+    }
+
 
 
 </style>
 <body>
     <h2>Alem do display: flex; a tag tambem display: inline-block; também coloca os elemntos na mesma linha e não em baixo</h2>
+    <ul>
     <h2>os comandos abaixo mudam em que parte está sendo vusualizada a imagem</h2>
-    <h2>o background-position: right top;
-        background-position: left bottom;
-        background-position: left top;
-        background-position: right center;
+
+        <li>o background-position: right top;</li>
+        <li>background-position: left top;</li>
+        <li>background-position: left top;</li>
+        <li>background-position: right center;</li>
+        <li>background-position: center center;</li>
+
+       
+    </ul>
+    
+    
+    <h2>os comandos abaixo mudam em que parte está sendo vusualizada a imagem</h2>
+    
+
 
 
     </h2>
@@ -50,9 +76,11 @@
     <div class="bl" id="d2">bloco</div>
     <div class="bl" id="d3">bloco</div>
     <div class="bl" id="d4">bloco</div>
+    <div class="bl" id="d5">bloco</div>
+
 </div>
-<h2>vejam a imagem inteira</h2>
-<img src="recife.webp" alt="">
+
+
     
 </body>
 </html>
