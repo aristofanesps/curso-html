@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    header{
+        background-color: rgb(34, 204, 204);
+        font-size: 24px;
+        margin-bottom: 4px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 8px;
+        border: solid blueviolet 2px;
+       
+    }
+    header>img{
+        width: 200px;
+
+    }
+    nav{
+        margin: 12px;
+        
+    }
+    nav>a{
+        font-size: 23px;
+        border: solid blue 2px;
+        border-radius: 10px;
+        text-decoration-line: underline;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 23px;
+        padding-right: 23px;
+        margin: 12px;
+        background-color: black;
+        color: aliceblue;
+        text-decoration: none;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.151);
+
+     
+    }
+    nav>a:hover{
+        color:brown;
+        background-color: yellow;
+        box-shadow: ;
+    }
+    main{
+        background-color: blueviolet;
+        border: solid blueviolet 2px;
+        margin-top: 0px;
+        margin-right: 30PX;
+        margin-left: 30PX;
+        margin-bottom: 90px;
+        padding-bottom: 700px;   
+
+    }
+    main>img{
+        width: 200px;
+    }
+    main>p{
+        background-color: rgba(95, 42, 165, 0.548);
+        margin: 12px;
+        padding: 12px;
+    
+    }
+    nav>p{
+        margin: 17px;
+        padding: 23px;
+    }
+    img{
+        width: 200px;
+    }
+    .d1{
+        
+        width: 700px;
+        right: 505px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        width: 1000px;
+        margin: 45px;
+    }
+    .d2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border: solid;
+    }
+    .d3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: solid;
+    }
+    .d4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: solid;
+    }
+    .d5{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid;
+    }
+    .d6{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: solid;
+    }
+    .d7{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        border: solid;
+    }
+    .m1{
+        color: red;
+        text-align: justify;
+        padding-left: 190px;
+        padding-right: 190px;
+        padding-top: 190px;
+        padding-bottom: 190px;
+        margin: 50px;
+        border: solid blue;
+        flex-grow: 900px;
+        
+        
+    }
+
+ </style>
+
+
+<body>
+    
+    <header>
+        <img src="NovaMobi logo transparente.png" alt="">
+
+        <h2>esse tag header usada para cabeçalho do site</h2>
+        
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <h2>DEUS OUVE SEU POVO</h2>
+        
+        <nav>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime corporis minima sed alias natus harum consequuntur, vero et neque eius necessitatibus, officia quae? Nemo nihil architecto consequuntur inventore officia velit.</P>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime corporis minima sed alias natus harum consequuntur, vero et neque eius necessitatibus, officia quae? Nemo nihil architecto consequuntur inventore officia velit.</P>
+
+        </nav>
+            
+        
+       
+       
+       
+        
+
+        <img src="NovaMobi logo transparente.png" alt="">
+        <img src="NovaMobi logo transparente.png" alt="">
+
+
+
+    </main> 
+ <p class="d4">usando o flexbox pra deixar textos, imagens, videos lado a lado</p>
+ <ul class="d5">
+    <li>display: flex; deixa lado a lado texto, imagem, video.</li>
+    <li>o flex-direction: row; deve ser usado logo abaixo do display: flex; para assim a configuração do conteudo ocorrer na horizontal</li>
+    <li>justify-content: flex-start; posiciona os elementos pra esqueda</li>
+    <li>justify-content: flex-end; posiciona os elementos pra direita</li>
+    <li>justify-content: center; posiciona os elementos no centro do eixo</li>
+    <li>justify-content: space-between; deixa os elementos espaçados automaticamente</li>
+    <li>justify-content: space-around; deixa os elementos espaçados, a diferença é que deixa ka com margem</li>
+    <li>o gap; vc pode definir o tamanho de espaçamento que deseja por, ex: gap: 16px;</li>
+
+
+
+    
+ </ul>  
+<div class="d1">
+    <div class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni aperiam libero cumque ex ab aliquid, repellat veniam. Quibusdam ullam, eaque exercitationem inventore hic soluta nihil praesentium rerum corporis doloribus.</div>
+    <div class="c2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae animi aut tenetur asperiores vitae? Iste, impedit? Culpa, veniam aut, deleniti, molestias optio enim iusto quisquam ex eveniet quod quam?</div>
+    <div class="c3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ullam ab cupiditate deleniti velit natus earum rerum dignissimos reiciendis voluptates minus, cum id sed tenetur quidem doloribus! Doloribus, atque ipsum!</div>
+    
+</div>
+<h2>usando justify-content: flex-start;</h2>
+<div class="d2">
+    <div>texto 01</div>
+    <div>texto 02</div>
+    <div>texto 03</div>
+
+</div>
+<h2>usando justify-content: flex-end;</h2>
+<div class="d3">
+    <div>texto 01</div>
+    <div>texto 02</div>
+    <div>texto 03</div>
+</div>
+<h2>usando justify-content: center;</h2>
+
+<div class="d4">
+    <div>texto 01</div>
+    <div>texto 02</div>
+    <div>texto 03</div>
+</div>
+<h2>usando justify-content: space-between;</h2>
+<div class="d5">
+    <div>texto 01</div>
+    <div>texto 02</div>
+    <div>texto 03</div>
+</div>
+<h2>usando justify-content: space-around</h2>
+<div class="d6">
+    <div>texto 01</div>
+    <div>texto 02</div>
+    <div>texto 03</div>
+</div>
+<h2>usando o GAP e tambem modificando um elemento filho</h2>
+<div class="d7">
+    <div>texto 01</div>
+    <div>texto 02</div>
+    <div class="m1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita aspernatur deserunt, obcaecati facilis nemo assumenda, debitis perspiciatis mollitia quasi placeat, animi eveniet eius accusantium ex dolore minima reiciendis! Et.</div>
+</div>
+
+
+    
+ 
+    <footer>serve para rodapé do site</footer>
+
+
+
+</body>
+</html>

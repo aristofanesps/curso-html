@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+</head>
+<style>
+    /*
+    . é uma class
+    : é uma pseudo class
+    :: é um pseudo elemento
+    #é um ID
+
+    */
+    .d1{
+        text-decoration: none;
+    }
+    .d2{
+        text-decoration: none;
+    
+
+    }
+    .d2:hover{
+        color: aquamarine;
+        text-decoration: underline;    
+    }
+   
+    .d3{
+        text-decoration: none;
+    }
+    .d3:hover{
+        color: gold;
+    }
+    .d4{
+        text-decoration: none;
+    }
+    .d4:hover{
+        color: hotpink;
+    }
+    .d4::before{
+        content: "♕";
+    }
+    .d4::after{
+        content: "✈";
+    }
+    body{
+        margin: 56px;
+        background-color: antiquewhite;
+    }
+    h1{
+        background-color: aqua;
+        height: 90px;
+        width: 901px;
+        padding: 23px 23px 12px 12px;
+        border: solid chartreuse;
+    }
+    img{
+        height: 50px;
+        width: 100;
+        border-style: solid;
+        padding: 12px 69px 34px 90px;
+        background-color: black;
+       
+    }
+</style>
+<body>
+    <img src="NovaMobi-1536x364.png" alt="">
+    <h1>Personalizando links de 3 formas</h1>
+    <p> a tag text-decoration: none; retiro o sublinhado do link e não tem nenuma outra formatação no primeiro grupo de links.</p>
+
+    <ul>
+        <li><a class="d1" href="https://www.bing.com/search?q=como+capturar+fonts&cvid=406dc3a9bdd74e4c92236aea0e45f486&aqs=edge.0.69i59i450l8...8.37166416j0j1&FORM=ANNTA1&PC=U531" target="_blank" rel="external">acessando fonts</a></li>
+        <li><a class="d1" href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" rel="external">acesse youtube</a></li>
+        
+    </ul>
+    <p> Já no segundo e terceiro grupo de links a tag hover mudo os efeitos.</p>
+
+    <ul>
+        <li><a class="d2" href="https://www.bing.com/search?q=como+capturar+fonts&cvid=406dc3a9bdd74e4c92236aea0e45f486&aqs=edge.0.69i59i450l8...8.37166416j0j1&FORM=ANNTA1&PC=U531" target="_blank" rel="external">acessando fonts</a></li>
+        <li><a class="d2" href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" rel="external">acesse youtube</a></li>
+        
+    </ul>
+    <ul>
+        <li><a class="d3" href="https://www.bing.com/search?q=como+capturar+fonts&cvid=406dc3a9bdd74e4c92236aea0e45f486&aqs=edge.0.69i59i450l8...8.37166416j0j1&FORM=ANNTA1&PC=U531" target="_blank" rel="external">acessando fonts</a></li>
+        <li><a class="d3" href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" rel="external">acesse youtube</a></li>
+        
+    </ul>
+    <p>colocando símbolos, desenhos no link</p>
+
+    <ul>
+        <li><a class="d4" href="https://www.bing.com/search?q=como+capturar+fonts&cvid=406dc3a9bdd74e4c92236aea0e45f486&aqs=edge.0.69i59i450l8...8.37166416j0j1&FORM=ANNTA1&PC=U531" target="_blank" rel="external">acessando fonts</a></li>
+        <li><a class="d4" href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" rel="external">acesse youtube</a></li>
+        
+    </ul>
+    
+    
+</body>
+</html>
