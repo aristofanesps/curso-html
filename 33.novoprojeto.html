@@ -13,7 +13,7 @@
         padding: 0px;
     }
 body{
-    background-color: darkslategrey;
+  
     min-height: 100%vh;
 }  
 footer{
@@ -30,7 +30,7 @@ header{
     color: white;
     padding-bottom: 45px;
 }
-header>h2{
+header>h1{
     text-align: center;       
     padding-top: 12px;        
     font-variant: small-caps;
@@ -49,43 +49,53 @@ header>div{
 }
 div>p{
     line-height: 24px;
-    
     padding-left: 40px;
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
     padding-top: 10vh;
     padding-bottom: 10vh;
-
+    text-align:center;
+    color: aliceblue;
     
 }
+
 .preto{
     background-color: black;
-    color: aliceblue;
+    
    
 }
-.branco{
-    background-color: white;
+
+
+
+#imagem02{
+    background-image: url(flores-abrotéa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
-.cinza{
-    background-color: rgba(74, 177, 87, 0.637);
-    width: 400px;
-    margin-left: 35px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+#imagem01{
+    background-image: url(recife.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
+
+
+
 
 
 
 </style>  
 <body>
     <header>
-        <h2>poemas de cordel</h2>
+        <h1>poemas de cordel</h1>
         <div class="p1"><strong>Autor: </strong><a class="link" href="https://www.youtube.com" target="_blank">Aristófanes Souza</a></div>
 
     </header>
     <div>
-        <P class="branco"><br>
+        <P class="branco" id="imagem01"><br>
 
 
 
@@ -102,7 +112,7 @@ div>p{
       
     </div>
     <div class="preto">
-        <p class="cinza">
+        <p>
             E busco sonhar meu sonhos <br>
             Até no sopro do vento.Nas gotas fracas da chuva <br>
             Que a terra vai borrifando <br>
@@ -113,7 +123,7 @@ div>p{
         </P>
     </div>
     <div>
-        <P class="branco"><br>
+        <P class="branco" id="imagem02"><br>
 
 
 
@@ -128,9 +138,7 @@ div>p{
             Sonhando sou avarento <br>
         </p> 
     </div>
-    <div>
-        <img src="flores-abrotéa.jpg" alt="">
-    </div>
+  
     
    
    <footer>
