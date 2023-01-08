@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
     }
+  
     .menu{
         background-color: green;
         color: aliceblue;
@@ -20,83 +21,102 @@
         text-align: center;
         border-radius: 4px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.911);
-
-        
-        
-
-
-       
+        margin: auto;
+        list-style: none;
         
     }
     .menu li:hover{
-        background-color: blue;
+        background-color: rgb(81, 255, 0);
         border-radius: 4px;
-
+        margin: auto;
 
         
     }
+    
     .menu ul{
         display: none;
+        list-style: none;
+
+    
     }
     .menu li:hover>ul{
         display: block;
         background-color: green;
         border-radius: 4px;
+     
+       
+        
+        
         
     }
     a{
         text-decoration: none;
         color: aliceblue;
+        
+
+        
+    
     }
     main{
-        background-color: rgba(146, 230, 3, 0.219);
+        
         border-color: aqua;
-        width: 36%;
-        height: 50%;
-        padding-left: 160px;
-        padding-top: 23px;
-        box-shadow: -1px 1px 5px 1px rgb(0 0 0 / 50%);
+        width: 890px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(foto\ cdu\ nova\ mobi.jpg);
+        background-size: cover;
+       
+        
+
+       
+        
        
        
-        position: absolute;
-        top: 30%;
-        left:28%      
+    
     }
     header{
+        display: flex;
+        flex-direction: row;
         background-color: rgba(8, 146, 8, 0.507);
-        border: 1px solid black;
-        width: 60%;
-        height: 34px;
-        margin-left: 23px;
-        margin-right: 0px;
-      
+        margin-left: auto;
+        margin-right: auto;
+        width: 890px;
+        height: 70px;
+        box-shadow: 0px 0px 5px black;
         
     }
     header img{
         width: 166px;
-        position: absolute;
-        top: 19%;
-        left: 30%;
+        height: 50px;
+        padding: 10px;
+     
     }
     header h1{
-        position: absolute;
-        top: 22%;
-        left: 47%;
-        color: rgb(5, 66, 5);
-    }
-   
-     
+        padding-left: 120px;
+        padding-top: 24px;
+        color: aliceblue;
+        text-shadow: 1px 1px 2px black;
     
- 
+    }
+    footer{
+        background-color: rgb(2, 2, 66);
+        color: aliceblue;
+        text-align: center;
+        font-style: italic;
+        height: 60px;
+        width: 100%;
+        padding-top: 6px;
+        
+    }
 
-
-
+    
 
 </style>
 <body>
-    <header>
+    <header class="topo">
         <img src="NovaMobi logo transparente.png" alt="">
-        <h1>Estoque</h1>
+        <h1>Gerenciando Estoque</h1>
 
     </header>
     <main>
@@ -119,6 +139,8 @@
     </main>
     
 <footer>
+    <p>Desenvolvido por Aristófanes Paulino</p>
+    <P>&#9742; (81)98361-3142</P>
 
 </footer>
 </body>
