@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu dropdown</title>
+</head>
+<style>
+dp-menu ul {
+    list-style-type: none;
+    
+}
+
+.dp-menu ul {
+    background-color: black;
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.dp-menu ul li a:hover {
+    background-color: yellow;
+    
+
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 100px
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+</style>
+<body>
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a>
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#">Notícias</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Quem somos</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
