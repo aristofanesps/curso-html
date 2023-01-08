@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando menu</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        width: 100%;
+        
+        
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li{
+        display: block;
+        background-color: black;
+        float: left;
+        position: relative;
+        text-decoration: none;
+        padding-left: 1rem;
+        
+    }
+    li a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+    li ul{
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        left: 0;
+        display: none;
+       
+
+    }
+    li ul li{
+        clear: both;
+        width: 100%;
+    
+    }
+    ul li:hover,
+    ul li:focus-within{
+        background-color: aqua;
+        
+    }
+    ul li:hover>ul{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">filmes</a></li>
+            <li><a href="#">gospel</a>
+            <ul>
+                <li><a href="#">drama</a></li>
+                <li><a href="#">terror</a></li>
+                <li><a href="#">jovem</a></li>
+
+            </ul>
+            </li>
+            <li><a href="#">nomes</a>
+            <ul>
+                <li><a href="#">joao</a></li>
+                <li><a href="#">jose</a></li>
+                <li><a href="#">jonas</a></li>
+            </ul>
+            </li>
+
+
+
+
+            
+            </ul>
+          
+            
+        </ul>
+
+
+
+
+    </nav>
+    
+</body>
+</html>
