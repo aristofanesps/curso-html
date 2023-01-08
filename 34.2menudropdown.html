@@ -14,20 +14,31 @@
     .menu ul li{
         background-color: black;
         color: aliceblue;
-        width: 150px;
+        width: 300px;
         float: left;
         font-size: 23px;
         line-height: 30px;
         display: inline-block;
+        text-align: center;
+        
     }
     .menu ul li:hover{
-        background-color: rgba(0, 0, 0, 0.651);
+        background-color: rgba(54, 151, 83, 0.651);
+        
     }
     .menu ul ul{
         display: none;
     }
-    .menu ul ul li:hover{
-        background-color: aqua;
+    .menu ul li:hover>ul{
+        display: block;
+        
+
+        
+    }
+    .sub{
+        padding-left: 0;
+
+        
     }
 
 </style>
@@ -35,7 +46,7 @@
     <nav class="menu">
         <ul>
             <li>brasil
-                <ul>
+                <ul class="sub">
                     <li>Recife</li>
                     <li>Segipe</li>
                     <li>Maceió</li>
