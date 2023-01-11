@@ -7,31 +7,46 @@
     <title>Document</title>
 </head>
 <style>
+    /*primeira tabela simples*/
+    th{
+    
+        text-align: center;
+    }
+   
     td{
         border: 1px solid darkred;
         color: blue;
-        text-align: center;
+        text-align: left;
         padding: 7px;
+        vertical-align: bottom; /*serve pra alinhar o item dentro da céula de forma vertical*/
     }
     table{
-        width: 400px; 
-        border: 2px solid darkgrey;   
+        width: 400px;
+        height: 300px; 
+        border: 2px solid rgb(204, 13, 13);   
         border-collapse: collapse; /* serve pra deixar colada, sem espaço a borda da tabela às bordas das células*/
+    }
+    .linha01{
+        background-color: darkgray;
+    }
+    .linha02{
+        background-color: darkgray;
     }
    
 </style>
 <body>
     <h1>minha primeira tabela</h1>
     <h2>fazendo tabela com 3 linhase 3 colunas</h2>
+    <!--CONSTRUINDO UMA TABELA SIMPLES-->
     <!--hierarquia de tabelas-->
     <!--Table = tabela-->
-    <!--table row = linhas da tabela-->
-    <!--table header = cabeçalho da tabela-->
-    <!--table data = dado da tabela-->
+    <!--table row, tr, = linhas da tabela-->
+    <!--table header , th, = cabeçalho da tabela-->
+    <!--table data, td = dado da tabela -->
 
     <table>
-        <th>Alimentos</th>
-        <tr class="linha">
+        <th colspan="3">Tabela de alimentos</th><!--o colspan mescla as linhas horizontais-->
+        <tr class="linha01">
             <td>Pães</td>
             <td>10 und</td>
             <td>R$ 10</td>
@@ -41,15 +56,48 @@
             <td>Açucar</td>
             <td>34 und</td>
             <td>  R$</td>
-        <tr>
+        <tr class="linha02">
             <td>Feijão</td>
             <td>15und</td>
             <td>R$ 50</td>
     
         </tr>
         
+    </table>  
 
-        </tr>
+    <!--PARTES DA TABELA
+    TABLE
+        THEAD - cabeça
+        th, tr, td
+
+        TBODY - corpo da tabela
+        th, tr, td
+
+        TFOOT - rodapé da tabela
+        th, tr, td
+    
+    
+    -->
+    <h1>SEGUNDA TABELA construido usando cabeça. corpo e rodapé</h1>
+
+
+    <table>
+        <thead> <!--cabeça-->
+            
+
+        </thead>
+
+        <tbody> <!--corpo da tabela-->
+
+        </tbody>
+        
+        <tfoot> <!--rodapé da tabela-->
+
+        </tfoot>
+    
+    </table>  
+
+      
     
     
     
