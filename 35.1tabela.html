@@ -8,7 +8,7 @@
 </head>
 <style>
     DIV{
-        height: 256px;
+        height: 277px;
         width: 500px;
         margin: auto;
         display: flex;
@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: flex-start;
         background-color: aqua;
-        padding-top: 23px;
+        padding-top: 11px;
        
       
 
@@ -42,17 +42,19 @@
         border: 1px solid white;
     }
     img{
-        width: 50px;     
+        width: 50px;
+        height: 30px;     
     }
     .b1{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+ 
     
     tbody td{
         border: 1px solid black;
-        padding: 8px;
+        padding: 6px;
     }
     tfoot{
         text-align: center;
@@ -60,12 +62,20 @@
     .qtd{
         text-align: right;
     }
+    caption{
+        font-size: 24px;
+        background-color: blueviolet;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
 
 
 </style>
 <body>
-     <!--PARTES DA TABELA
+     <!--PARTES DA TABELA EM ORDEM
     TABLE
+        CAPTION - (legenda)
         THEAD - cabeça
         th, tr, td
 
@@ -83,48 +93,51 @@
     </div>
 
 
-    <DIV><table>
-        <thead> <!--cabeça-->
-            <tr>
-                <th>bandeira</th>
-                <th>estado</th>
-                <th>população</th>
-                <TH>capital<br>federativa</TH>
-                <th>região</th>
-            </tr>
+    <DIV>
+        <table>
+            <caption>Estados do Brasil</caption> <!--legenda que fica em cima da tabela-->
+            <thead> <!--cabeça-->
+                <tr>
+                    <th>bandeira</th>
+                    <th>estado</th>
+                    <th>população</th>
+                    <TH>capital<br>federativa</TH>
+                    <th>região</th>
+                </tr>
 
-        </thead>
+            </thead>
 
-        <tbody> <!--corpo da tabela-->
-            <tr>
-                <td class="b1"><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Bandeira_de_Pernambuco.svg" alt=""></td>
-                <td>Pernambuco</td>
-                <td class="qtd">900000</td>
-                <td>Recife</td>
-                <td rowspan="3">nordeste</td>
-            </tr>
-            <tr>
-                <td class="b1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/1024px-Bandeira_da_Para%C3%ADba.svg.png" alt=""></td>
-                <td>Paraiba</td>
-                <td class="qtd">700000</td>
-                <td>João Pessoal</td>
+            <tbody> <!--corpo da tabela-->
+                <tr>
+                    <td class="b1"><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Bandeira_de_Pernambuco.svg" alt=""></td>
+                    <td>Pernambuco</td>
+                    <td class="qtd">900000</td>
+                    <td>Recife</td>
+                    <td rowspan="3">nordeste</td>
+                </tr>
+                <tr>
+                    <td class="b1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/1024px-Bandeira_da_Para%C3%ADba.svg.png" alt=""></td>
+                    <td>Paraiba</td>
+                    <td class="qtd">700000</td>
+                    <td>João Pessoal</td>
               
-            </tr>
-            <tr>
-                <td class="b1"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bandeira_de_Sergipe.svg" alt=""></td>
-                <td>Sergipe</td>
-                <td class="qtd">890989</td>
-                <td>Sergipe</td>
+                </tr>
+                <tr>
+                    <td class="b1"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bandeira_de_Sergipe.svg" alt=""></td>
+                    <td>Sergipe</td>
+                    <td class="qtd">890989</td>
+                    <td>Sergipe</td>
                 
-            </tr>
-        </tbody>
+                </tr>
+            </tbody>
         
-        <tfoot> <!--rodapé da tabela-->
-            <td colspan="5">fonte: IBGE</td>
+            <tfoot> <!--rodapé da tabela-->
+                <td colspan="5">fonte: IBGE</td>
 
-        </tfoot>
+            </tfoot>
     
-    </DIV></table> 
+        </table>
+    </DIV> 
     
     
 </body>
