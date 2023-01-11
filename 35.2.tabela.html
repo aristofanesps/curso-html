@@ -20,6 +20,25 @@
     tr:nth-child(even){  /*essa tag diz que a cada duas linha a cor mudará. efeito zebrado*/
         background-color: gold;
     }
+    /*mudança na segunda tabela*/
+    #mesclado{
+        text-align: center;
+    }
+    /*TERCEIRA TABELA*/
+    .filmes{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    .cor01{
+        background-color: aliceblue;
+        text-align: center;
+        padding: 12px;
+    }
+    #centralizar{
+        text-align: center;
+    }
+
  
     
 
@@ -82,6 +101,128 @@
         </tfoot>
 
     </table>
+
+    <h1>segunda tabela,mesclando céculas com ROWSPAN e COLSPAN</h1>
+
+    <table>
+        <caption>Estados do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col" width="500px">Estado</th>
+                <th>polulação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>pernambuco</td>
+                <td>1000000</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td>1099900</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td>1099900</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td>1099900</td>
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td rowspan="4">1099900</td> <!--mesclei quatro celulas de uma coluna-->
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" id="mesclado">paraiba</td>
+                
+            </tr>
+            <tr>
+                <td>paraiba</td>
+                <td>1099900</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+
+    </table>
+
+    <h1>terceira tabela</h1>
+
+    <table>
+        <caption class="filmes">Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <td class="cor01">Grupos</td>
+                <td class="cor01">Nomes</td>
+                <td colspan="3" class="cor01" id="centralizar">filmes</td>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="cor01">mulheres</td>
+                <td class="cor01">Ana Maria</td>
+                <td class="cor01">Renata</td>
+                <td class="cor01">Flávia</td>
+                <td class="cor01">Paula Elisa</td>
+            </tr>
+            <tr>
+                
+                <td class="cor01">Carla</td>
+                <td class="cor01">Marimar</td>
+                <td class="cor01">Rosana</td>
+                <td class="cor01">lisa</td>
+            </tr>
+            <tr>
+                
+                <td class="cor01">Carla</td>
+                <td class="cor01">Mara</td>
+                <td class="cor01">Ruthe</td>
+                <td class="cor01">lisangela</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="cor01">Homens</td>
+                <td class="cor01">Carlo</td>
+                <td class="cor01">José</td>
+                <td class="cor01">Roberto</td>
+                <td class="cor01">Marcos</td>
+            </tr>
+            <tr>
+               
+                <td class="cor01">Marcelo</td>
+                <td class="cor01">Roger</td>
+                <td class="cor01">Paulo</td>
+                <td class="cor01">Manoel</td>
+            </tr>
+            <tr>
+                
+                <td class="cor01">Flávio</td>
+                <td class="cor01">Gessé</td>
+                <td class="cor01">Rodrigo</td>
+                <td class="cor01">Félix</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+        
     
 </body>
 </html>
