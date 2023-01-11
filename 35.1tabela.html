@@ -9,7 +9,7 @@
 <style>
     DIV{
         height: 277px;
-        width: 500px;
+        width: 800px;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -56,6 +56,9 @@
         border: 1px solid black;
         padding: 6px;
     }
+    tr:nth-child(2n){  /*essa tag diz que a cada duas linha a cor mudará. efeito zebrado*/
+        background-color: rgba(169, 169, 169, 0.959);
+    }
     tfoot{
         text-align: center;
     }
@@ -99,7 +102,7 @@
             <thead> <!--cabeça-->
                 <tr>
                     <th>bandeira</th>
-                    <th>estado</th>
+                    <th scope="col" width="500px">estado</th> <!--scope="col" essa tag aumenta a coluna inteira-->
                     <th>população</th>
                     <TH>capital<br>federativa</TH>
                     <th>região</th>
