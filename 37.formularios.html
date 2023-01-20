@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="python">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIANDO FORMULARIOS</title>
+</head>
+<body>
+    <H1>MEU PRIMEIRO FORMULÁRIO</H1>
+   
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete é pra tirar o texto automático, Method="post" serve pra seus não dados não aparecerem na ulr-->
+            <p><label for="nome">Nome:</label> <!--o label serve pra relacionar, ex: imput com o nome-->
+                 <input type="text" name="nome" id="nome"></p>
+            <p><label for="sobrenome">sobrenome:</label> 
+                <input type="text" name="sobrenome" id="sobrenome"></p>
+            <input type="submit" value="Enviar">
+    </form>
+    
+    
+</body>
+</html>
