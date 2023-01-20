@@ -7,48 +7,37 @@
     <title>Document</title>
 </head>
 <style>
-    .slides-list{
-  /*remove os estilos da lista*/
-  list-style-type: none;
-  margin: 10px 0;
-  padding: 0;
-  
-  /* 
-	deixa todos os itens da lista
-	na horizontal e todos com a
-	mesma largura
-  */
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-}
-.slide-show{
-    overflow: hidden;
-}
-.slides-list{
-    position: relative;
-    left: 0%;
-
+  body {
+  background-color: #4099E6;
 }
 
+.carousel {
+  width: 1000px;
+  margin: 0 auto;
+}
 </style>
+
+
 <body>
-    <ul class="slides-list" >
-        <li class="slide" >
-          <img src="https://picsum.photos/300/300?image=8" />
-        </li>
-        <li class="slide" >
-          <img src="https://picsum.photos/300/300?image=0" />
-        </li>
-        <li class="slide" >
-          <img src="https://picsum.photos/300/300?image=6" />
-        </li>
-        <li class="slide" >
-          <img src="https://picsum.photos/300/300?image=1" />
-        </li>
-    </ul>
-    <script>
-   
-    </script>
+
+  <div class="carousel">
+    <div><img src="https://i.imgur.com/3aIutJi.png" alt="js" /></div>
+    <div><img src="https://i.imgur.com/rWtGeQ0.png" alt="java" /></div>
+    <div><img src="https://i.imgur.com/8946bSF.png" alt="python"/></div>
+    <div><img src="https://i.imgur.com/9Hc7hjb.png" alt="kotlin" /></div>
+    <div><img src="https://i.imgur.com/uZDEpjX.png" alt="scala" /></div>
+    <div><img src="https://i.imgur.com/eQoyQjy.png" alt="C#" /></div>
+    <div><img src="https://i.imgur.com/ko3iAbu.png" alt="PHP" /></div>
+    <div><img src="https://i.imgur.com/Afkz5od.png" alt="dotnet" /></div>
+  </div>
 </body>
+<script>
+  $('.carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  });
+</script>
 </html>
