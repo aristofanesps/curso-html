@@ -7,6 +7,8 @@
     <title>CRIANDO FORMULARIOS</title>
 </head>
 <body>
+
+    <!--ATENÇÃO, FOI CRIADO UM ARQUIVO EM PHP COM NOME cadastro.php, serve pra mostrar texto ao clicar em enviar-->
     <H1>MEU PRIMEIRO FORMULÁRIO</H1>
    
     <form action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete é pra tirar o texto automático, Method="post" serve pra seus não dados não aparecerem na ulr-->
@@ -15,8 +17,29 @@
             <p><label for="sobrenome">sobrenome:</label> 
                 <input type="text" name="sobrenome" id="sobrenome"></p>
             <input type="submit" value="Enviar">
+    
+            
+
     </form>
     
-    
+    <h1>segundo formulário</h1>
+    <!--o REQUIRED impede que seja enviado se os campos não estiver preeenchido, ja o MINLENGTH informa a quantidade minima de carecteres que aquele campo deve ter, ja SIZE informa o tamsnho da caixa de texto, ja o PLACEHOLDER serve pra colocar algo dentro da caixa de texto-->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <div>
+            <label for="Usuário">Usuário</label>:
+            <input type="text" name="Usuário" id="Usuário" required size="30" placeholder="seu usuario?">
+        </div>
+        <br>
+
+        <div>
+            <label for="Senha">Senha</label>:
+            <input type="password" name="Senha" id="Senha" required minlength="8" size="30" placeholder="digite senha">
+        </div>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
 </body>
 </html>
