@@ -23,7 +23,7 @@
 
     </form>
     
-    <h1>segundo formulário</h1>
+    <h1>Aprendendo a fazer formulário</h1>
     <!--REQUIRED impede que seja enviado se os campos não estiver preeenchido,
         MINLENGTH e MAXLENGTH informa a quantidade minima ou maxima de carecteres que aquele campo deve ter,
         SIZE informa o tamanho da caixa de texto,
@@ -31,6 +31,7 @@
         PLACEHOLDER serve pra colocar algo dentro da caixa de texto
         FIELDSET coloca automaticamente uma borda nos elementos
         LEGEND permite colocar na borda do fieldset um texto
+        TEXTAREA cria uma caixa de texto para mensagem
     -->
     <form action="cadastro.php" method="post" autocomplete="off">
     <fieldset>
@@ -48,7 +49,7 @@
         <br>
         <div>
             <label for="numero">Número:</label> 
-            <input type="number" name="numero" id="numero" required min="1" max="3">
+            <input type="number" name="numero" id="numero" required min="1" max="100">
         </div>
         <br>
         <div>
@@ -75,14 +76,62 @@
         </div>
         <div>
             <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required placeholder="(DDD)9999-9999">
+            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required placeholder="99-9999-9999">
         </div>
         <!-- O elemento PATTERN serve pra separar os numeros do telefone -->
+        <br>
 
         <div>
             <label for="arquivo">Arquivo:</label>
             <input type="file" name="arquivo" id="arquivo" required>
         </div>
+        <br>
+        <div>
+        <br>
+        <!-- SELECT serve pra criar um piclist -->
+        <div>
+            <label for="selecao">selecione</label>:
+            <select name="selecao" id="selecao">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="recife">Recife</option>
+            </select>   
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="caixa">Caixa de texto:</label>
+            <textarea name="caixa" id="caixa" cols="50" rows="10" required></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- a diferença entre o input radio e o Checkbox é que um permite marcar várias opções, já aquele apenas uma -->
+            Esportes favoritos:
+            <fieldset>
+                <legend>Marque as opções</legend>                
+                <label for="Futebol"><input type="checkbox" name="Futebol" id="Futebol">Futebol</label> 
+                <label for="basquete"><input type="checkbox" name="basquete" id="basquete">Basquete <br></label>
+                <label for="volei"><input type="checkbox" name="volei" id="volei">Volei</label> 
+                <label for="natacao"><input type="checkbox" name="natacao" id="natacao">Natação <br></label>
+                <label for="golf"><input type="checkbox" name="golf" id="golf">Golf</label>
+                <label for="karate"><input type="checkbox" name="karate" id="karate">Karatê</label>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>sexo</legend>
+                <label for="masculino"><input type="radio" name="sexo" id="masculino"> Masculino</label>
+                <label for="feminino"><input type="radio" name="sexo" id="feminino"> Feminino</label>
+                <label for="nao-definido"><input type="radio" name="sexo" id="nao-definido"> Não definido</label>
+                <!-- onde tem "name" tem que ter os mesmo nomes em todos, neste caso o nome sexo foi repetido -->
+            </fieldset>
+        </div>
+        
+
+
+
+    
 
       
 
@@ -99,7 +148,9 @@
     <a href="https://www.youtube.com/watch?v=rcaXavXsWGA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=19">Métodos GET e POST para formulários</a><br>
     <a href="https://www.youtube.com/watch?v=SinNyasc-zU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=20">Criando caixas de texto e de senha</a><br>
     <a href="https://www.youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=22">Elementos number, month, date e time em formulários HTML</a><br>
-    <a href="https://www.youtube.com/watch?v=SRMEHklQC4M&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=23">Formulários com telefone e e-mail</a>
+    <a href="https://www.youtube.com/watch?v=SRMEHklQC4M&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=23">Formulários com telefone e e-mail</a><br>
+    <a href="https://www.youtube.com/watch?v=0oKKt4775ow&t=570s">HTML 5 - Inputs e Formulários em HTML</a>
+    <a href="https://www.youtube.com/watch?v=iGDHFa4znHE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=24">Checkbox e Radio button em HTML</a>
  </footer>
 
 </body>
