@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRIANDO FORMULARIOS</title>
 </head>
+
 <body>
 
     <!--ATENÇÃO, FOI CRIADO UM ARQUIVO EM PHP COM NOME cadastro.php, serve pra mostrar texto ao clicar em enviar-->
@@ -23,23 +24,83 @@
     </form>
     
     <h1>segundo formulário</h1>
-    <!--o REQUIRED impede que seja enviado se os campos não estiver preeenchido, ja o MINLENGTH informa a quantidade minima de carecteres que aquele campo deve ter, ja SIZE informa o tamsnho da caixa de texto, ja o PLACEHOLDER serve pra colocar algo dentro da caixa de texto-->
+    <!--REQUIRED impede que seja enviado se os campos não estiver preeenchido,
+        MINLENGTH e MAXLENGTH informa a quantidade minima ou maxima de carecteres que aquele campo deve ter,
+        SIZE informa o tamanho da caixa de texto,
+        MIN e MAX informa o tamanho da caixa quando numeros
+        PLACEHOLDER serve pra colocar algo dentro da caixa de texto
+        FIELDSET coloca automaticamente uma borda nos elementos
+        LEGEND permite colocar na borda do fieldset um texto
+    -->
     <form action="cadastro.php" method="post" autocomplete="off">
+    <fieldset>
+        <legend>Dados pessoais</legend>
         <div>
-            <label for="Usuário">Usuário</label>:
+            <label for="Usuário">Usuário:</label>
             <input type="text" name="Usuário" id="Usuário" required size="30" placeholder="seu usuario?">
         </div>
         <br>
 
         <div>
-            <label for="Senha">Senha</label>:
-            <input type="password" name="Senha" id="Senha" required minlength="8" size="30" placeholder="digite senha">
+            <label for="Senha">Senha:</label>
+            <input type="password" name="Senha" id="Senha" required minlength="8" size="9" placeholder="digite senha">
+        </div>
+        <br>
+        <div>
+            <label for="numero">Número:</label> 
+            <input type="number" name="numero" id="numero" required min="1" max="3">
+        </div>
+        <br>
+        <div>
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data" required>
         </div>
         <br>
 
+        <div>
+            <label for="periodo">Período:</label>
+            <input type="month" name="periodo" id="periodo" required> &nbsp &nbsp a &nbsp &nbsp
+            <input type="month" name="periodo" id="periodo" required>
+
+        </div>
+        <br>
+        <div>
+            <label for="hora">Horário:</label>
+            <input type="time" name="hora" id="hora" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required placeholder="(DDD)9999-9999">
+        </div>
+        <!-- O elemento PATTERN serve pra separar os numeros do telefone -->
+
+        <div>
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" name="arquivo" id="arquivo" required>
+        </div>
+
+      
+
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
+    </fieldset>   
 
     </form>
+
+ <footer>
+    <p>aulas aprendidas nos links a baixo</p>
+    <a href="https://www.youtube.com/watch?v=Wa1Ji2t2gmc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=17">Como criar formulários com HTML5</a><br>
+    <a href="https://www.youtube.com/watch?v=MqdSffM1HZc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=18">Usar Label vai melhorar seus formulários</a><br>
+    <a href="https://www.youtube.com/watch?v=rcaXavXsWGA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=19">Métodos GET e POST para formulários</a><br>
+    <a href="https://www.youtube.com/watch?v=SinNyasc-zU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=20">Criando caixas de texto e de senha</a><br>
+    <a href="https://www.youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=22">Elementos number, month, date e time em formulários HTML</a><br>
+    <a href="https://www.youtube.com/watch?v=SRMEHklQC4M&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=23">Formulários com telefone e e-mail</a>
+ </footer>
+
 </body>
 </html>
