@@ -143,19 +143,23 @@
                 <!-- onde tem "name" tem que ter os mesmo nomes em todos, neste caso o nome sexo foi repetido -->
             </fieldset>
         </div>
-        
-
-
-
     
-
       
-
-        <input type="submit" value="Enviar">
+        <input type="submit" value="ENVIAR">
         <input type="reset" value="Limpar">
-    </fieldset>   
+    </fieldset> 
+    
+  
 
     </form>
+
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <button type="submit">Send</button>
+        <input type="hidden" name="accessKey" value="9984ab05-367e-44db-8453-28f557bd295b">
+
+   </form>
 
  <footer>
     <h2>aulas aprendidas nos links a baixo</h2>
