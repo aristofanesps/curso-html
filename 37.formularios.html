@@ -89,19 +89,35 @@
         <div>
         <br>
         <!-- SELECT serve pra criar um piclist -->
+        <!-- o "selected" junto com o "required" na primeira opção deixa marcado nela e impede de enviar sem escolher o estado -->
         <div>
-            <label for="selecao">selecione</label>:
-            <select name="selecao" id="selecao">
-                <option value="html">html</option>
-                <option value="css">css</option>
-                <option value="recife">Recife</option>
+            <label for="selecao">selecione seu Estado</label>:
+            <select name="selecao" id="selecao" required>
+                <option value="" selected>--Escolha o Estado--</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PB">Paraiba</option>
+                <option value="AL">Alagoas</option>
+                <option value="SE">Sergipe</option>
+
             </select>   
+        </div>
+        <br>
+        <!-- data lista também serve pra lista, ele é bom porque também o usuário pode escrever o que não ta na lista -->
+        <div>
+            <label for="prof">Profissão:</label>
+            <input type="text" list="prof" required placeholder="--digite sua profissão--">
+            <datalist id="prof">
+                <option selected>Téc. Seg. Trabalho</option>
+                <option>Professor</option>
+                <option>Mecânico</option>
+                <option>Cabeleireiro</option>
+            </datalist>
         </div>
         <br>
         <br>
         <div>
-            <label for="caixa">Caixa de texto:</label>
-            <textarea name="caixa" id="caixa" cols="50" rows="10" required></textarea>
+            <label for="caixa">Mensagem:</label><br>
+            <textarea name="caixa" id="caixa" cols="50" rows="10" required placeholder="Digite sua mensagem aqui..."></textarea>
         </div>
         <br>
         <div>
@@ -142,15 +158,17 @@
     </form>
 
  <footer>
-    <p>aulas aprendidas nos links a baixo</p>
-    <a href="https://www.youtube.com/watch?v=Wa1Ji2t2gmc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=17">Como criar formulários com HTML5</a><br>
-    <a href="https://www.youtube.com/watch?v=MqdSffM1HZc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=18">Usar Label vai melhorar seus formulários</a><br>
-    <a href="https://www.youtube.com/watch?v=rcaXavXsWGA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=19">Métodos GET e POST para formulários</a><br>
-    <a href="https://www.youtube.com/watch?v=SinNyasc-zU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=20">Criando caixas de texto e de senha</a><br>
-    <a href="https://www.youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=22">Elementos number, month, date e time em formulários HTML</a><br>
-    <a href="https://www.youtube.com/watch?v=SRMEHklQC4M&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=23">Formulários com telefone e e-mail</a><br>
-    <a href="https://www.youtube.com/watch?v=0oKKt4775ow&t=570s">HTML 5 - Inputs e Formulários em HTML</a>
-    <a href="https://www.youtube.com/watch?v=iGDHFa4znHE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=24">Checkbox e Radio button em HTML</a>
+    <h2>aulas aprendidas nos links a baixo</h2>
+    <a href="https://www.youtube.com/watch?v=Wa1Ji2t2gmc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=17">&#10004&nbspComo criar formulários com HTML5</a><br>
+    <a href="https://www.youtube.com/watch?v=MqdSffM1HZc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=18">&#10004&nbspUsar Label vai melhorar seus formulários</a><br>
+    <a href="https://www.youtube.com/watch?v=rcaXavXsWGA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=19">&#10004&nbspMétodos GET e POST para formulários</a><br>
+    <a href="https://www.youtube.com/watch?v=SinNyasc-zU&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=20">&#10004&nbspCriando caixas de texto e de senha</a><br>
+    <a href="https://www.youtube.com/watch?v=7P22zubU6i8&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=22">&#10004&nbspElementos number, month, date e time em formulários HTML</a><br>
+    <a href="https://www.youtube.com/watch?v=SRMEHklQC4M&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=23">&#10004&nbspFormulários com telefone e e-mail</a><br>
+    <a href="https://www.youtube.com/watch?v=iGDHFa4znHE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=24">&#10004&nbspCheckbox e Radio button em HTML</a><br>
+    <a href="https://www.youtube.com/watch?v=acOURIAlB1Q&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=25">&#10004&nbspElementos color, range e file em HTML </a><br>
+    <a href="https://www.youtube.com/watch?v=PFGmSEj2wIo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=26">&#10004&nbspSelect, datalist e textarea em HTML</a><br>
+    <a href="https://www.youtube.com/watch?v=8b6K4UQDm7w&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=27">&#10004&nbspElemento output em formulários HTML</a>
  </footer>
 
 </body>
