@@ -1,0 +1,34 @@
+
+/* h1{
+    color: brown;
+}
+celulares largura
+@media(max-width: 450px) {
+    h1{
+        color: blue;
+    }
+    body{
+        background-color: blanchedalmond;
+    }
+}
+/* tabletes */
+/* @media(min-width: 768px) and (max-width: 1024px){
+    body{
+        background-color: chartreuse;
+    }
+} */
+
+
+@media(orientation: landscape){
+    body{
+        background-color: blue;
+    }
+
+}
+
+@media(orientation: portrait){
+    body{
+        background-color: aqua;
+    }
+
+}
