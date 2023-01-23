@@ -17,18 +17,39 @@ celulares largura
         background-color: chartreuse;
     }
 } */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width:100vw;
+    height: 100vh;
+   
 
+    
+    /* background-size: 1500px 700px; */
+    
+}
 
 @media(orientation: landscape){
-    body{
+    html, body{
+        
         background-color: blue;
+        background-image: url(CDU_7-scaled.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      
+       
+
     }
 
 }
 
 @media(orientation: portrait){
-    body{
+    html, body{
         background-color: aqua;
+        background-image: url(Sem\ título.png);
     }
 
 }
