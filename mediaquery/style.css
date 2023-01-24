@@ -24,12 +24,39 @@ celulares largura
 html, body{
     width:100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
-
+}
     
     /* background-size: 1500px 700px; */
+main{
+    background-color: rgba(255, 255, 255, 0.479);
+    width: 400PX;
+    height: 400PX;
+    border-radius: 10PX;
+    color: rgba(0, 128, 0, 0.733);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.575);
+    text-align: center;
+    padding-top: 10px;
+    
+
+   
     
 }
+select{
+    margin-top: 29PX;
+    width: 256PX;
+    padding: 10PX;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.432);
+    
+}
+
+
+
 
 @media(orientation: landscape){
     html, body{
@@ -52,4 +79,4 @@ html, body{
         background-image: url(Sem\ título.png);
     }
 
-}
+
