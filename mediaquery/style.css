@@ -1,22 +1,25 @@
 
-/* h1{
-    color: brown;
-}
-celulares largura
-@media(max-width: 450px) {
-    h1{
-        color: blue;
-    }
-    body{
-        background-color: blanchedalmond;
+/* configuração resolução de celular */
+@media screen and (max-width: 600px) {
+      html, body{
+        background-color: aqua;
+        background-image: url(Sem\ título.png);
     }
 }
-/* tabletes */
-/* @media(min-width: 768px) and (max-width: 1024px){
-    body{
-        background-color: chartreuse;
+/* configuração resolução de pc */
+ @media screen and (min-width: 600px) and (max-width: 1400px){
+    html, body{
+        
+        background-color: blue;
+        background-image: url(CDU_7-scaled.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      
+       
+
     }
-} */
+}
 *{
     margin: 0;
     padding: 0;
@@ -58,7 +61,7 @@ select{
 
 
 
-@media(orientation: landscape){
+/* @media(orientation: landscape){
     html, body{
         
         background-color: blue;
@@ -78,5 +81,6 @@ select{
         background-color: aqua;
         background-image: url(Sem\ título.png);
     }
-
+}    
+ */
 

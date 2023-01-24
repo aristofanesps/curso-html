@@ -1,3 +1,114 @@
+/* Resolução celular */
+@media screen and (max-width: 600px){
+    img.telefone{
+        display: block; 
+
+    }
+    img.pc{
+        display: none;
+    }
+    img.tv{
+        display: none;
+    }
+    img.impressora{
+        display: none;
+    }
+    img.tablet{
+        display: none;
+
+    }
+    h1{
+        padding-bottom: 10px;
+        color: rgb(15, 156, 62);
+    }
+    main{
+        width: 300px;
+    }
+    
+
+}
+
+/* Resolução tablet */
+@media screen and (min-width: 600px) and (max-width: 992px){
+    img.telefone{
+        display: none; 
+    }
+    img.pc{
+        display: none;
+    }
+    img.tv{
+        display: none;
+    }
+    img.impressora{
+        display: none;
+    }
+    img.tablet{
+        display: block;
+    }
+    h1{
+        padding-bottom: 10px;
+        color: aliceblue;
+    }
+    main{
+        width: 50vw;
+    }
+  
+
+
+}
+/* resolução tela desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    img.telefone{
+        display: none; 
+    }
+    img.pc{
+        display: block;
+    }
+    img.tv{
+        display: none;
+    }
+    img.impressora{
+        display: none;
+    }
+    img.tablet{
+        display: none;
+
+    }
+    h1{
+        padding-bottom: 10px;
+        color: red;
+    }
+    main{
+        width: 50vw;
+    }
+    
+    
+
+}
+   /* resolução telas grandes  */
+@media screen and (min-width: 1200px){
+    img.telefone{
+        display: none; 
+    }
+    img.pc{
+        display: none;
+    }
+    img.tv{
+        display: block;
+    }
+    img.impressora{
+        display: none;
+    }
+    img.tablet{
+        display: none;
+
+    }
+    main{
+        width: 30vw;
+    }    
+}
+    
+    
 
 
 *{
@@ -18,20 +129,16 @@ body{
 }
 main{
     background-color: rgba(255, 255, 255, 0.76);
-    width: 90vw;
     padding: 20px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 200px;
     margin-bottom: 20px;
     border-radius: 16px;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.616);
     
 }
-h1{
-    padding-bottom: 10px;
-    color: aliceblue;
-}
+
 
 img{
     display: block;
@@ -41,16 +148,5 @@ img{
 /* display: none; serve pra ocultar elemento */
 /* display: block; ele não fica oculto */
 
-img.telefone{
-    display: block; 
-}
-img.pc{
-    display: none;
-}
-img.tv{
-    display: none;
-}
-img.impressora{
-    display: none;
-}
+
 
